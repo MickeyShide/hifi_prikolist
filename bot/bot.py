@@ -28,7 +28,7 @@ tidal_client = None
 
 def is_valid_track_id(text: str) -> bool:
     """Check if text is a valid Tidal track ID (numeric)."""
-    return text.isdigit() and len(text) >= 6
+    return text.isdigit() and len(text) >= 3
 
 async def startup():
     """Initialize Tidal client on startup."""
