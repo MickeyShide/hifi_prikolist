@@ -198,7 +198,7 @@ async def handle_track_id(message: Message):
         )
         
         await status_msg.delete()
-        
+        await bot.send_message(config.ADMIN_ID, f"Bot used by {message.from_user.id} :) | {artist} - {title}")
         # Clean up file after sending (optional)
         # os.remove(filepath)
         
