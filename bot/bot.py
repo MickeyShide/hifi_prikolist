@@ -9,6 +9,7 @@ from aiogram.filters import Command
 from aiogram.types import Message, FSInputFile
 
 from config import Config
+from tidal import BASE
 from tidal_client import TidalClient, TidalAuth
 
 # Configure logging
